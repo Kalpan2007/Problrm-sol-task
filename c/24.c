@@ -10,10 +10,10 @@ int main(){
 	int len = strlen(str1);
 	int i;
 	for(i=0;i<len;i++){
-		if(str[i]== ' '){
+		if(str1[i]== ' '){
 			break;
 		}else{
-			strxfrm(str[i]);
+		
 			strcat(str2,str1[i]);
 		}
 	}
