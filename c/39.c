@@ -8,7 +8,7 @@ int main(){
 	char str[]="{[()]}";
 	int len = strlen(str);
 	float lan = strlen(str);
-	int count =0;;
+	int count =0;
 	char one='[';
 	char two=']';
 	char three='{';
