@@ -3,23 +3,13 @@
 // ● Output: "programming"
 
 let str ="I love programming in JavaScript"
-let current =0
-let max=0
-let x=0
-let ans;
-let y=0;
-for(let i=0;i<str.length;i++){
-    if(str[i]==' '){
-        current=0
-    }else{
-        current++
-    }
-    if(current>max){
-        max = current
-        x=i
+let str2 = str.split(" ")
+let max =0
+let position ;
+for(let i =0;i<str2.length;i++){
+    if(max<str2[i].length){
+        max = str2[i].length
+        position = i
     }
 }
-for(let k=x-max+1;k<=x;k++){
-    ans[y++]=str[k]
-}
-console.log(ans)
+console.log("this is a longest word in this string :",str2[position])
